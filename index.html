@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #202020;
+        box-sizing: border-box;
+    }
+  .nav{
+    background-color: white;
+    height: 23rem;
+  }
+  .btn-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70rem;
+  }
+  .btn-nav button{
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
+  .nav img{
+    width: 100px;
+  }
+  .titulo{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .titulo marquee{
+    animation: blinker 1.5s linear infinite;
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  
+  @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+.botones-nav .Support{
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 1.5px solid orange;
+}
+.carta {
+    transform: translateX(23rem);
+    border-radius: 10px;
+    margin-top: 2rem;
+    width: 46rem;
+    background-color: #525151;
+    display: flex; 
+    color: white;
+}
+.carta img{
+    border-radius: 10px;
+    width: 20rem;
+}
+.titulo-nombre{
+    font-size: 1.4rem;
+    position: relative;
+    top: -18rem;
+    margin-left: 48rem;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.estatus, .especie, .genero, .ubicacion, .origen{
+    margin-left:48rem;
+    transform: translateY(-17rem);
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+</style>
+<body>
+    <div class="padre">
+        <div class="nav">
+            <div class="btn-nav">
+                <div class="logo">
+                    <a href=""><img src="img/b6740400-92d4-11ea-8a13-d5f6e0558e9b-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="botones-nav">
+                    <button>Docs</button>
+                    <button>About</button>
+                    <button class="Support">Support Us</button>
+                </div>
+            </div>
+            <div class="titulo">
+                <marquee scrollamount="12"  direction="letf">Rick And Morty Api Clone</marquee>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
